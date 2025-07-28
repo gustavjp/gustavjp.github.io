@@ -1,0 +1,76 @@
+@charset "utf-8";
+/*
+    Final Capstone Project
+    Fika Coffee Shop
+    Author: Karl Gustav Jansson Ekstrand
+    Date:   2025-07-17
+    Filename: layout.css
+*/
+
+/* Layout for main content area */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main, .content-wrapper {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Alternative if you want to target aside and article directly */
+aside {
+    flex: 1;
+    min-width: 300px;
+}
+
+article {
+    flex: 2;
+}
+
+/* Grid/Flexbox layouts, positioning */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f6f0;
+    border-bottom: 2px solid #856910;
+    text-align: center;
+}
+
+nav.horizontal {
+    display: flex;
+    justify-content: center;
+    background-color: #8b4513;
+}
+
+nav.horizontal ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.horizontal ul li a {
+    display: block;
+    padding: 1rem 2rem;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+nav.horizontal ul li a:hover {
+    background-color: #a0522d;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+aside img {
+    width: 25%;
+}
